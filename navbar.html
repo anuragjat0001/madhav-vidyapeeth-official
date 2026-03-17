@@ -1,0 +1,56 @@
+<!--
+  ================================================================
+  MADHAV VIDYAPEETH — NAVBAR COMPONENT
+  Reusable reference snippet for all pages
+  Glassmorphism | Sticky | Mobile hamburger | Active state via JS
+  ================================================================
+  Usage: Copy this nav block into each HTML page.
+  Active link is managed automatically by navbar.js
+  based on window.location.pathname.
+  ================================================================
+-->
+
+<nav id="navbar" class="transparent" role="navigation" aria-label="Main navigation">
+  <div class="nav-container">
+
+    <!-- LOGO -->
+    <a href="index.html" class="nav-logo" aria-label="Madhav Vidyapeeth Home">
+      <div class="nav-logo-icon" aria-hidden="true">MV</div>
+      <div class="nav-logo-text">
+        <span class="school-name">Madhav Vidyapeeth</span>
+        <span class="school-tagline">CBSE Aff. No. 1731221</span>
+      </div>
+    </a>
+
+    <!-- DESKTOP MENU -->
+    <ul class="nav-menu" id="nav-menu" role="list">
+      <li><a href="index.html"      class="nav-link">Home</a></li>
+      <li><a href="about.html"      class="nav-link">About</a></li>
+      <li><a href="academics.html"  class="nav-link">Academics</a></li>
+      <li><a href="admissions.html" class="nav-link">Admissions</a></li>
+      <li><a href="contact.html"    class="nav-link">Contact</a></li>
+      <li class="nav-cta">
+        <a href="admissions.html" class="btn btn-primary btn-sm">Apply Now</a>
+      </li>
+    </ul>
+
+    <!-- HAMBURGER (mobile) -->
+    <button class="nav-hamburger" id="nav-hamburger"
+            aria-label="Toggle navigation menu"
+            aria-expanded="false"
+            aria-controls="nav-menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+  </div>
+</nav>
+
+<!--
+  NOTES FOR INNER PAGES:
+  - Change class="transparent" to class="scrolled" on inner pages
+    (they don't have a full-screen hero, so nav should always show glass bg)
+  - The active link class (.active) is auto-applied by navbar.js
+  - The hamburger icon animates open/close via .open class toggled in navbar.js
+-->

@@ -1,0 +1,148 @@
+<!--
+  ================================================================
+  MADHAV VIDYAPEETH — CARDS COMPONENT REFERENCE
+  Reusable card patterns used across the website
+  ================================================================
+-->
+
+
+<!-- ── WHY CARD ───────────────────────────────────────────── -->
+<!--
+  Used in: index.html (Why Choose Us section)
+  Class: .why-card (inside .why-grid)
+  Hover: translateY(-6px) + gold bottom border reveal
+-->
+<div class="why-card">
+  <div class="why-card-icon" aria-hidden="true">🎓</div>
+  <h3 class="why-card-title">CBSE Affiliated</h3>
+  <p class="why-card-desc">
+    Affiliated to CBSE (No. 1731221), valid 2026–2031.
+    NCERT-aligned curriculum meeting national standards.
+  </p>
+</div>
+
+
+<!-- ── ACADEMIC CARD ──────────────────────────────────────── -->
+<!--
+  Used in: index.html and academics.html
+  Class: .academic-card (inside .academics-grid, grid-template-columns: repeat(3, 1fr))
+  Hover: translateY(-8px) + shadow lift
+-->
+<article class="academic-card">
+  <div class="academic-card-header">
+    <span class="academic-card-num">01</span>
+    <div class="academic-card-icon" aria-hidden="true">🌱</div>
+    <h3 class="academic-card-title">Pre-Primary</h3>
+  </div>
+  <div class="academic-card-body">
+    <p class="academic-card-desc">
+      Play-based, activity-centred learning aligned with NEP 2020 early
+      childhood guidelines. Building language, number sense, and social skills.
+    </p>
+    <div class="academic-tag-list">
+      <span class="academic-tag">Nursery</span>
+      <span class="academic-tag">LKG</span>
+      <span class="academic-tag">UKG</span>
+    </div>
+  </div>
+</article>
+
+
+<!-- ── DETAIL CARD ────────────────────────────────────────── -->
+<!--
+  Used in: About, Contact, Admissions pages
+  Class: .detail-card
+  Modifiers: border-left:3px solid var(--gold) for highlighted variant
+-->
+<div class="detail-card">
+  <h4 style="margin-bottom:0.625rem; font-family:'DM Sans',sans-serif;">Card Title</h4>
+  <p style="font-size:0.875rem; color:var(--slate); line-height:1.7;">
+    Card content goes here. Supports any text, lists, or nested elements.
+  </p>
+</div>
+
+
+<!-- ── TESTIMONIAL CARD ───────────────────────────────────── -->
+<!--
+  Used in: index.html (Testimonials section)
+  Class: .testimonial-card (inside .testimonials-grid, dark background)
+  Hover: translateY(-4px) + lighter background
+-->
+<div class="testimonial-card">
+  <div class="testimonial-stars" aria-label="5 stars">★★★★★</div>
+  <p class="testimonial-text">
+    "Parent testimonial text goes here. Kept honest and factual."
+  </p>
+  <div class="testimonial-author">
+    <div class="testimonial-avatar" aria-hidden="true">P</div>
+    <div>
+      <div class="testimonial-name">Parent of Class IV Student</div>
+      <div class="testimonial-role">Hadota, Chomu</div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ── GALLERY ITEM ───────────────────────────────────────── -->
+<!--
+  Used in: index.html (Gallery section)
+  Class: .gallery-item (inside .gallery-grid)
+  nth-child(1) and nth-child(5): grid-column: span 2
+  Hover: image scale + overlay label fade-in
+-->
+<div class="gallery-item">
+  <!-- Replace this div with actual <img> tag when photos are available -->
+  <div class="gallery-img-placeholder" style="background:linear-gradient(135deg,#0A1628,#1E3A7E);">
+    🏫
+  </div>
+  <div class="gallery-overlay">
+    <span class="gallery-overlay-text">School Campus</span>
+  </div>
+</div>
+
+
+<!-- ── INFO STRIP ITEM ────────────────────────────────────── -->
+<!--
+  Used in: index.html (Info Strip below hero)
+  Class: .info-strip-item (inside .info-strip-grid on navy background)
+-->
+<div class="info-strip-item">
+  <span class="info-strip-icon">🏫</span>
+  <div>
+    <div class="info-strip-label">Established</div>
+    <div class="info-strip-value">1 April 2024</div>
+  </div>
+</div>
+
+
+<!-- ── STEP ITEM ──────────────────────────────────────────── -->
+<!--
+  Used in: admissions.html and academics.html
+  Class: .step-item (inside .step-list)
+-->
+<div class="step-item">
+  <div class="step-num">1</div>
+  <div class="step-content">
+    <div class="step-title">Step Title</div>
+    <div class="step-desc">Step description goes here.</div>
+  </div>
+</div>
+
+
+<!-- ── HIGHLIGHT BLOCK ───────────────────────────────────── -->
+<!--
+  Used in: about.html, academics.html, contact.html
+  Class: .highlight-block
+  Full-width navy gradient block with gold radial glow
+-->
+<div class="highlight-block">
+  <div style="position:relative; z-index:1;">
+    <span class="section-label" style="color:var(--gold-light);">Label</span>
+    <h2 style="font-family:'Playfair Display',serif; color:var(--white); margin-bottom:1rem;">
+      Section Title
+    </h2>
+    <p style="color:rgba(250,247,242,0.75); max-width:600px; line-height:1.8;">
+      Content description goes here.
+    </p>
+  </div>
+</div>
