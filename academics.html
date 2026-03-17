@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Academics at Madhav Vidyapeeth — CBSE curriculum from Nursery to Class VIII. Subject structure, teaching approach, and assessment details." />
+  <title>Academics | Madhav Vidyapeeth — CBSE School Chomu, Jaipur</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600;1,700&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/responsive.css" />
+  <link rel="stylesheet" href="assets/css/animations.css" />
+  <style>
+    .stage-tabs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.625rem;
+      margin-bottom: var(--space-lg);
+    }
+    .tab-btn {
+      padding: 0.625rem 1.5rem;
+      border-radius: 100px;
+      border: 1.5px solid var(--border);
+      background: transparent;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.875rem;
+      font-weight: 600;
+      color: var(--slate);
+      cursor: pointer;
+      transition: all var(--dur-mid) var(--ease);
+    }
+    .tab-btn:hover,
+    .tab-btn.active {
+      background: var(--navy);
+      border-color: var(--navy);
+      color: var(--white);
+    }
+    .subject-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 0.875rem;
+      margin-top: var(--space-md);
+    }
+    .subject-chip {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      padding: 0.875rem 1.25rem;
+      background: var(--white);
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-md);
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.875rem;
+      font-weight: 500;
+      color: var(--navy);
+      box-shadow: var(--shadow-sm);
+      transition: all var(--dur-fast) var(--ease);
+    }
+    .subject-chip:hover {
+      border-color: var(--gold);
+      box-shadow: var(--shadow-gold);
+      transform: translateY(-2px);
+    }
+    .subject-chip .subj-icon {
+      font-size: 1.2rem;
+    }
+    .faq-question {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      padding: 1.25rem 1.5rem;
+      background: transparent;
+      border: none;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.975rem;
+      font-weight: 600;
+      color: var(--navy);
+      cursor: pointer;
+      text-align: left;
+      gap: 1rem;
+    }
+    .faq-question svg {
+      flex-shrink: 0;
+      transition: transform var(--dur-mid) var(--ease);
+    }
+    .faq-item.open .faq-question svg {
+      transform: rotate(180deg);
+    }
+    .faq-item {
+      background: var(--white);
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-md);
+      margin-bottom: 0.625rem;
+      overflow: hidden;
+    }
+    .faq-answer {
+      padding: 0 1.5rem;
+      font-size: 0.9rem;
+      color: var(--slate);
+      line-height: 1.75;
+      max-height: 0;
+      overflow: hidden;
+    }
+    .faq-answer-inner {
+      padding-bottom: 1.25rem;
+    }
+  </style>
+</head>
+<body>
+
+<nav id="navbar" class="scrolled" role="navigation">
+  <div class="nav-container">
+    <a href="index.html" class="nav-logo">
+      <div class="nav-logo-icon">MV</div>
+      <div class="nav-logo-text">
+        <span class="school-name">Madhav Vidyapeeth</span>
+        <span class="school-tagline">CBSE Aff. No. 1731221</span>
+      </div>
+    </a>
+    <ul class="nav-menu" id="nav-menu">
+      <li><a href="index.html"       class="nav-link">Home</a></li>
+      <li><a href="about.html"       class="nav-link">About</a></li>
+      <li><a href="academics.html"   class="nav-link active">Academics</a></li>
+      <li><a href="admissions.html"  class="nav-link">Admissions</a></li>
+      <li><a href="contact.html"     class="nav-link">Contact</a></li>
+      <li class="nav-cta"><a href="admissions.html" class="btn btn-primary btn-sm">Apply Now</a></li>
+    </ul>
+    <button class="nav-hamburger" id="nav-hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<section class="page-hero">
+  <div class="container page-hero-content">
+    <nav class="breadcrumb">
+      <a href="index.html">Home</a><span>›</span>
+      <span class="current">Academics</span>
+    </nav>
+    <h1 class="page-hero-title">Academic Programme</h1>
+    <p class="page-hero-desc">
+      CBSE-aligned curriculum from Nursery to Class VIII — building strong
+      foundations, critical thinking, and a love of learning.
+    </p>
+  </div>
+</section>
+
+<!-- CBSE INFO BLOCK -->
+<section class="content-section">
+  <div class="container">
+    <div class="highlight-block reveal">
+      <div style="position:relative;z-index:1; display:grid; grid-template-columns:1fr 1fr; gap:2rem; align-items:center;">
+        <div>
+          <span class="section-label" style="color:var(--gold-light);">CBSE Affiliation</span>
+          <h2 style="font-family:'Playfair Display',serif; color:var(--white); margin-bottom:0.875rem;">
+            Verified CBSE Affiliation
+          </h2>
+          <p style="color:rgba(250,247,242,0.75); line-height:1.8;">
+            Madhav Vidyapeeth holds CBSE affiliation valid from 01 April 2026 to
+            31 March 2031. Currently operational from Nursery to Class VIII.
+            Higher classes are being introduced progressively in accordance with
+            CBSE norms and infrastructure readiness.
+          </p>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:1rem;">
+          <div style="background:rgba(255,255,255,0.06); border:1px solid rgba(255,255,255,0.1); border-radius:var(--radius-md); padding:1.25rem;">
+            <div style="font-family:'DM Sans',sans-serif; font-size:0.72rem; font-weight:700; text-transform:uppercase; letter-spacing:0.1em; color:var(--gold-light); margin-bottom:0.3rem;">Affiliation No.</div>
+            <div style="font-family:'Playfair Display',serif; font-size:1.6rem; color:var(--white); font-weight:700;">1731221</div>
+          </div>
+          <div style="background:rgba(255,255,255,0.06); border:1px solid rgba(255,255,255,0.1); border-radius:var(--radius-md); padding:1.25rem;">
+            <div style="font-family:'DM Sans',sans-serif; font-size:0.72rem; font-weight:700; text-transform:uppercase; letter-spacing:0.1em; color:var(--gold-light); margin-bottom:0.3rem;">Valid Period</div>
+            <div style="font-family:'DM Sans',sans-serif; font-size:0.95rem; color:var(--white); font-weight:600;">01 Apr 2026 – 31 Mar 2031</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STAGE OVERVIEW -->
+<section class="content-section alt-bg">
+  <div class="container">
+    <div class="center-block reveal">
+      <span class="section-label">School Stages</span>
+      <h2 class="section-title">Classes We <span>Currently Offer</span></h2>
+      <div class="divider"></div>
+    </div>
+
+    <div class="academics-grid stagger-children" style="margin-top:var(--space-xl);">
+      <article class="academic-card">
+        <div class="academic-card-header">
+          <span class="academic-card-num">01</span>
+          <div class="academic-card-icon">🌱</div>
+          <h3 class="academic-card-title">Pre-Primary</h3>
+        </div>
+        <div class="academic-card-body">
+          <p class="academic-card-desc">Activity-centred, play-based learning aligned with NEP 2020 early childhood guidelines. Building language, number sense, and social confidence.</p>
+          <div class="academic-tag-list">
+            <span class="academic-tag">Nursery</span>
+            <span class="academic-tag">LKG</span>
+            <span class="academic-tag">UKG</span>
+            <span class="academic-tag">Ages 3–6</span>
+          </div>
+        </div>
+      </article>
+      <article class="academic-card">
+        <div class="academic-card-header">
+          <span class="academic-card-num">02</span>
+          <div class="academic-card-icon">📚</div>
+          <h3 class="academic-card-title">Primary School</h3>
+        </div>
+        <div class="academic-card-body">
+          <p class="academic-card-desc">Structured CBSE-NCERT curriculum. English, Hindi, Mathematics, Science, Social Studies, Computer Education. Continuous and Comprehensive Evaluation.</p>
+          <div class="academic-tag-list">
+            <span class="academic-tag">Class I–V</span>
+            <span class="academic-tag">NCERT</span>
+            <span class="academic-tag">CCE</span>
+          </div>
+        </div>
+      </article>
+      <article class="academic-card">
+        <div class="academic-card-header">
+          <span class="academic-card-num">03</span>
+          <div class="academic-card-icon">🔬</div>
+          <h3 class="academic-card-title">Middle School</h3>
+        </div>
+        <div class="academic-card-body">
+          <p class="academic-card-desc">Comprehensive CBSE curriculum including English, Hindi, Sanskrit, Mathematics, Science, Social Science, and Computer Education. Term-based assessments.</p>
+          <div class="academic-tag-list">
+            <span class="academic-tag">Class VI–VIII</span>
+            <span class="academic-tag">Science</span>
+            <span class="academic-tag">Sanskrit</span>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <div style="margin-top:var(--space-xl);">
+      <div class="detail-card" style="border-left:4px solid var(--gold); background:var(--gold-pale);">
+        <p style="color:var(--navy); font-weight:600; margin-bottom:0.5rem;">📌 Upcoming Classes</p>
+        <p style="color:var(--slate); font-size:0.9rem; line-height:1.7;">
+          Madhav Vidyapeeth holds CBSE affiliation up to Senior Secondary Level (Class XII).
+          <strong>Classes IX and above are being introduced progressively</strong> in line with
+          CBSE norms, infrastructure readiness, and staffing capacity.
+          Please contact the school office for the latest update on class availability.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- SUBJECT EXPLORER -->
+<section class="content-section">
+  <div class="container">
+    <div class="center-block reveal">
+      <span class="section-label">What Students Learn</span>
+      <h2 class="section-title">Subject <span>Explorer</span></h2>
+      <div class="divider"></div>
+      <p class="section-desc">Select a stage to view the subjects taught at each level.</p>
+    </div>
+
+    <div style="margin-top:var(--space-lg);">
+      <div class="stage-tabs">
+        <button class="tab-btn" data-tab="preprimary">Pre-Primary</button>
+        <button class="tab-btn" data-tab="primary">Primary (I–V)</button>
+        <button class="tab-btn" data-tab="middle">Middle (VI–VIII)</button>
+      </div>
+
+      <div data-pane="preprimary" style="display:none;">
+        <p style="color:var(--slate); margin-bottom:var(--space-sm); font-size:0.9rem;">Play-based learning areas for Nursery, LKG, and UKG:</p>
+        <div class="subject-grid">
+          <div class="subject-chip"><span class="subj-icon">📖</span> English Language</div>
+          <div class="subject-chip"><span class="subj-icon">📝</span> Hindi Language</div>
+          <div class="subject-chip"><span class="subj-icon">🔢</span> Number Concepts</div>
+          <div class="subject-chip"><span class="subj-icon">🌿</span> Environmental Awareness</div>
+          <div class="subject-chip"><span class="subj-icon">🎨</span> Art &amp; Craft</div>
+          <div class="subject-chip"><span class="subj-icon">🎵</span> Music &amp; Movement</div>
+          <div class="subject-chip"><span class="subj-icon">⚽</span> Physical Development</div>
+          <div class="subject-chip"><span class="subj-icon">💛</span> Value Education</div>
+        </div>
+      </div>
+
+      <div data-pane="primary" style="display:none;">
+        <p style="color:var(--slate); margin-bottom:var(--space-sm); font-size:0.9rem;">CBSE-NCERT subjects for Class I through V:</p>
+        <div class="subject-grid">
+          <div class="subject-chip"><span class="subj-icon">📖</span> English</div>
+          <div class="subject-chip"><span class="subj-icon">📝</span> Hindi</div>
+          <div class="subject-chip"><span class="subj-icon">🔢</span> Mathematics</div>
+          <div class="subject-chip"><span class="subj-icon">🌿</span> EVS (Cl. I–II)</div>
+          <div class="subject-chip"><span class="subj-icon">🔬</span> Science (Cl. III–V)</div>
+          <div class="subject-chip"><span class="subj-icon">🌍</span> Social Studies (III–V)</div>
+          <div class="subject-chip"><span class="subj-icon">💻</span> Computer Education</div>
+          <div class="subject-chip"><span class="subj-icon">🎨</span> Art Education</div>
+          <div class="subject-chip"><span class="subj-icon">⚽</span> Physical Education</div>
+          <div class="subject-chip"><span class="subj-icon">💛</span> Moral Science</div>
+        </div>
+      </div>
+
+      <div data-pane="middle" style="display:none;">
+        <p style="color:var(--slate); margin-bottom:var(--space-sm); font-size:0.9rem;">CBSE-NCERT subjects for Class VI through VIII:</p>
+        <div class="subject-grid">
+          <div class="subject-chip"><span class="subj-icon">📖</span> English (1st Language)</div>
+          <div class="subject-chip"><span class="subj-icon">📝</span> Hindi (2nd Language)</div>
+          <div class="subject-chip"><span class="subj-icon">🕉️</span> Sanskrit (3rd Language)</div>
+          <div class="subject-chip"><span class="subj-icon">🔢</span> Mathematics</div>
+          <div class="subject-chip"><span class="subj-icon">🔬</span> Science</div>
+          <div class="subject-chip"><span class="subj-icon">🗺️</span> History</div>
+          <div class="subject-chip"><span class="subj-icon">🌍</span> Geography</div>
+          <div class="subject-chip"><span class="subj-icon">⚖️</span> Civics</div>
+          <div class="subject-chip"><span class="subj-icon">💻</span> Computer Science</div>
+          <div class="subject-chip"><span class="subj-icon">🎨</span> Art &amp; Craft</div>
+          <div class="subject-chip"><span class="subj-icon">⚽</span> Physical Education</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TEACHING APPROACH -->
+<section class="content-section alt-bg">
+  <div class="container">
+    <div class="info-grid-2" style="align-items:start; gap:var(--space-2xl);">
+      <div class="reveal-left">
+        <span class="section-label">How We Teach</span>
+        <h2 class="section-title">Teaching <span>Approach</span></h2>
+        <div class="divider"></div>
+        <div class="step-list" style="margin-top:var(--space-md);">
+          <div class="step-item">
+            <div class="step-num">1</div>
+            <div class="step-content">
+              <div class="step-title">Concept-Driven Learning</div>
+              <div class="step-desc">Focus on deep understanding over memorisation. Students are taught to apply concepts, not just recall them.</div>
+            </div>
+          </div>
+          <div class="step-item">
+            <div class="step-num">2</div>
+            <div class="step-content">
+              <div class="step-title">Activity-Based Methods</div>
+              <div class="step-desc">Regular practical activities, demonstrations, and hands-on experiments make learning tangible and memorable.</div>
+            </div>
+          </div>
+          <div class="step-item">
+            <div class="step-num">3</div>
+            <div class="step-content">
+              <div class="step-title">Regular Formative Assessment</div>
+              <div class="step-desc">Continuous assessments identify learning gaps early, allowing teachers to provide targeted support to each student.</div>
+            </div>
+          </div>
+          <div class="step-item">
+            <div class="step-num">4</div>
+            <div class="step-content">
+              <div class="step-title">Parent–School Alignment</div>
+              <div class="step-desc">Homework and school diary used to maintain consistent communication and reinforce classroom learning at home.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="reveal-right">
+        <span class="section-label">Assessment Pattern</span>
+        <h2 class="section-title">How Students <span>Are Assessed</span></h2>
+        <div class="divider"></div>
+        <div style="margin-top:var(--space-md); overflow:auto;">
+          <table class="data-table" style="border-radius:var(--radius-md); overflow:hidden;">
+            <thead>
+              <tr>
+                <th>Stage</th>
+                <th>Pattern</th>
+                <th>Board Exam</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Nursery – UKG</td><td>Activity-based observation &amp; portfolio</td><td>None</td></tr>
+              <tr><td>Class I – V</td><td>CCE: Periodic tests + Annual exam</td><td>None</td></tr>
+              <tr><td>Class VI – VIII</td><td>Term 1 + Term 2 (Annual) + Unit tests</td><td>None</td></tr>
+              <tr><td>Class IX – X*</td><td>CBSE pattern with board in Class X</td><td>CBSE Class X*</td></tr>
+              <tr><td>Class XI – XII*</td><td>CBSE Annual with practicals</td><td>CBSE Class XII*</td></tr>
+            </tbody>
+          </table>
+          <p style="font-size:0.8rem; color:var(--slate-light); margin-top:0.75rem;">* Classes IX–XII to be introduced progressively</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="content-section">
+  <div class="container">
+    <div class="center-block reveal" style="margin-bottom:var(--space-xl);">
+      <span class="section-label">Common Questions</span>
+      <h2 class="section-title">Academic <span>FAQs</span></h2>
+      <div class="divider"></div>
+    </div>
+
+    <div style="max-width:760px; margin:0 auto;">
+      <div class="faq-item">
+        <button class="faq-question">
+          Is Madhav Vidyapeeth a verified CBSE school?
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-answer"><div class="faq-answer-inner">Yes. Madhav Vidyapeeth holds CBSE affiliation number <strong>1731221</strong>, valid from 01 April 2026 to 31 March 2031. This can be verified at <strong>cbseaff.nic.in</strong>.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">
+          Which classes are currently running?
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-answer"><div class="faq-answer-inner">Madhav Vidyapeeth currently operates from <strong>Nursery to Class VIII</strong>. The school holds CBSE affiliation up to Senior Secondary (Class XII) and will introduce higher classes progressively.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">
+          What medium of instruction is used?
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-answer"><div class="faq-answer-inner">The school uses <strong>English as the primary medium of instruction</strong>. Hindi is taught as a second language from the Pre-Primary level onwards. Sanskrit is introduced from Class VI.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">
+          What textbooks are used?
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-answer"><div class="faq-answer-inner">The school follows <strong>NCERT textbooks</strong> as prescribed by the CBSE curriculum for all classes. Supplementary reading materials may be recommended by subject teachers.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">
+          How are students assessed in primary classes?
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-answer"><div class="faq-answer-inner">Primary students (Class I–V) are assessed through <strong>Continuous and Comprehensive Evaluation (CCE)</strong>, which includes periodic tests, oral assessments, project work, and the annual examination.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <div class="cta-decoration left"></div>
+  <div class="cta-decoration right"></div>
+  <div class="container cta-content reveal">
+    <div class="cta-badge"><span class="cta-badge-text">📣 Admissions Open — Session 2026–27</span></div>
+    <h2 class="cta-title">Start Your Child's <span class="gold-text">Academic Journey</span></h2>
+    <p class="cta-desc">Enroll at Madhav Vidyapeeth today for quality CBSE education in Hadota, Chomu, Jaipur.</p>
+    <div class="cta-buttons">
+      <a href="admissions.html" class="btn btn-primary btn-lg">Apply for Admission</a>
+      <a href="contact.html"    class="btn btn-outline btn-lg">Ask a Question</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-top-line"></div>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="footer-logo">
+          <div class="footer-logo-icon">MV</div>
+          <span class="footer-logo-name">Madhav Vidyapeeth</span>
+        </a>
+        <p class="footer-desc">CBSE Affiliated School | Hadota, Chomu, Jaipur — 303 702 | Est. 2024</p>
+        <span class="footer-affil">CBSE Aff. No. 1731221</span>
+      </div>
+      <div>
+        <p class="footer-col-title">Quick Links</p>
+        <ul class="footer-links">
+          <li><a href="index.html"      class="footer-link">Home</a></li>
+          <li><a href="about.html"      class="footer-link">About Us</a></li>
+          <li><a href="academics.html"  class="footer-link">Academics</a></li>
+          <li><a href="admissions.html" class="footer-link">Admissions</a></li>
+          <li><a href="contact.html"    class="footer-link">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-col-title">Academics</p>
+        <ul class="footer-links">
+          <li><a href="academics.html" class="footer-link">Pre-Primary</a></li>
+          <li><a href="academics.html" class="footer-link">Primary (I–V)</a></li>
+          <li><a href="academics.html" class="footer-link">Middle (VI–VIII)</a></li>
+          <li><a href="admissions.html" class="footer-link">CBSE Disclosure</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-col-title">Contact</p>
+        <ul class="footer-contact-list">
+          <li class="footer-contact-item">
+            <div class="footer-contact-icon">📍</div>
+            <div class="footer-contact-text"><strong>Address</strong>Hadota, Chomu, Jaipur — 303 702</div>
+          </li>
+          <li class="footer-contact-item">
+            <div class="footer-contact-icon">🕐</div>
+            <div class="footer-contact-text"><strong>Office Hours</strong>Mon–Sat: 8 AM – 3 PM</div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copyright">© 2024 Madhav Vidyapeeth. All rights reserved.</p>
+      <div class="footer-social">
+        <a href="#" class="footer-social-link" aria-label="Facebook">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+        </a>
+        <a href="#" class="footer-social-link" aria-label="YouTube">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.95A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon fill="#0A1628" points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<button id="back-to-top" class="back-to-top" aria-label="Back to top">
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"/></svg>
+</button>
+
+<script src="assets/js/animations.js" defer></script>
+<script src="assets/js/navbar.js"     defer></script>
+<script src="assets/js/script.js"     defer></script>
+</body>
+</html>

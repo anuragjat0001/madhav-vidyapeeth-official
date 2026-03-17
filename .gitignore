@@ -1,0 +1,66 @@
+# ── OS files ─────────────────────────────────────────────────
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# ── Editor ───────────────────────────────────────────────────
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+*.sublime-project
+*.sublime-workspace
+
+# ── Node (if any build tools are added later) ────────────────
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+.env
+.env.local
+.env.*.local
+
+# ── Build output (for future build tool setup) ───────────────
+dist/
+build/
+.cache/
+.parcel-cache/
+
+# ── Logs ─────────────────────────────────────────────────────
+*.log
+logs/
+
+# ── Temp / backup files ──────────────────────────────────────
+*.tmp
+*.bak
+*.orig
+*~
+
+# ── Large media (store in cloud / LFS instead) ───────────────
+*.psd
+*.ai
+*.sketch
+*.fig
+*.mp4
+*.mov
+*.avi
+*.mkv
+
+# ── Compressed archives ───────────────────────────────────────
+*.zip
+*.tar.gz
+*.rar
+
+# ── Private / sensitive ───────────────────────────────────────
+config.private.js
+secrets.js
