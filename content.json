@@ -1,0 +1,159 @@
+{
+  "school": {
+    "name": "Madhav Vidyapeeth",
+    "tagline": "Nurturing Minds. Shaping Futures. Building Character.",
+    "established": "1 April 2024",
+    "cbse_affiliation_number": "1731221",
+    "cbse_affiliation_valid_from": "01 April 2026",
+    "cbse_affiliation_valid_until": "31 March 2031",
+    "cbse_affiliation_scope": "Up to Senior Secondary Level (Class XII)",
+    "classes_operational": "Nursery to Class VIII",
+    "principal": {
+      "name": "Ms. Beenu Yadav",
+      "qualifications": "MA, M.Ed",
+      "title": "Principal"
+    },
+    "managing_body": {
+      "name": "Gramin Shiksha Evam Swasthya Utthan Sansthan",
+      "city": "Jaipur",
+      "type": "Registered Society — Rajasthan"
+    },
+    "type": "Private — Society Managed (Unaided)",
+    "co_educational": true,
+    "medium": "English (Hindi as Second Language)",
+    "address": {
+      "village": "Hadota",
+      "tehsil": "Chomu",
+      "district": "Jaipur",
+      "state": "Rajasthan",
+      "pin": "303702",
+      "country": "India"
+    },
+    "cbse_verify_url": "https://cbseaff.nic.in",
+    "saras_url": "https://saras.cbse.gov.in"
+  },
+
+  "nav_links": [
+    { "label": "Home",       "href": "index.html" },
+    { "label": "About",      "href": "about.html" },
+    { "label": "Academics",  "href": "academics.html" },
+    { "label": "Admissions", "href": "admissions.html" },
+    { "label": "Contact",    "href": "contact.html" }
+  ],
+
+  "why_cards": [
+    {
+      "icon": "🎓",
+      "title": "CBSE Affiliated",
+      "desc": "Affiliated to CBSE (No. 1731221), valid 2026–2031. NCERT-aligned curriculum meeting national standards."
+    },
+    {
+      "icon": "🛡️",
+      "title": "Safe Campus",
+      "desc": "Secure, clean, supervised campus environment. Every student's safety and well-being is a constant priority."
+    },
+    {
+      "icon": "👩‍🏫",
+      "title": "Experienced Faculty",
+      "desc": "Led by Principal Ms. Beenu Yadav (MA, M.Ed). Qualified teaching team focused on concept-driven learning."
+    },
+    {
+      "icon": "🚌",
+      "title": "Transport Facility",
+      "desc": "Transport available for Hadota and nearby areas. Contact school office for route and timing details."
+    }
+  ],
+
+  "academics": [
+    {
+      "stage": "Pre-Primary",
+      "classes": "Nursery, LKG, UKG",
+      "icon": "🌱",
+      "desc": "Play-based NEP 2020-aligned early learning. Language, numbers, creativity, social skills.",
+      "tags": ["Nursery", "LKG", "UKG", "Play-Based"]
+    },
+    {
+      "stage": "Primary School",
+      "classes": "Class I – V",
+      "icon": "📚",
+      "desc": "CBSE-NCERT curriculum. English, Hindi, Maths, Science, Social Studies, Computer Education, Art.",
+      "tags": ["Class I–V", "NCERT", "CCE"]
+    },
+    {
+      "stage": "Middle School",
+      "classes": "Class VI – VIII",
+      "icon": "🔬",
+      "desc": "Comprehensive CBSE programme. English, Hindi, Sanskrit, Mathematics, Science, Social Science, IT.",
+      "tags": ["Class VI–VIII", "Science", "Sanskrit"]
+    }
+  ],
+
+  "testimonials": [
+    {
+      "text": "We are very happy with the environment at Madhav Vidyapeeth. The teachers are attentive and the school focuses on building real understanding.",
+      "author": "Parent of Class IV Student",
+      "location": "Hadota, Chomu",
+      "rating": 5
+    },
+    {
+      "text": "The school has excellent discipline and very caring staff. My child enjoys going to school every day. Transport facility is also convenient.",
+      "author": "Parent of Class II Student",
+      "location": "Near Chomu",
+      "rating": 5
+    },
+    {
+      "text": "English-medium CBSE education close to our village without travelling to Jaipur city. Madhav Vidyapeeth gave us that right here.",
+      "author": "Parent of Class VI Student",
+      "location": "Morija Area",
+      "rating": 5
+    }
+  ],
+
+  "gallery_items": [
+    { "label": "School Campus",       "icon": "🏫" },
+    { "label": "Classroom Learning",  "icon": "📖" },
+    { "label": "Science Lab",         "icon": "🔬" },
+    { "label": "Sports Ground",       "icon": "⚽" },
+    { "label": "Cultural Events",     "icon": "🎭" }
+  ],
+
+  "mandatory_disclosure": {
+    "note": "All CBSE-required disclosure documents must be uploaded by the school administration to the website's Mandatory Disclosure page.",
+    "cbse_verify": "https://cbseaff.nic.in",
+    "documents_required": [
+      "Society Registration Certificate",
+      "CBSE Affiliation Certificate",
+      "NOC from State Government",
+      "Recognition Certificate",
+      "Land / Building Certificate",
+      "Building Safety Certificate",
+      "Fire Safety Certificate",
+      "Water & Sanitation Certificate",
+      "SMC Composition",
+      "PTA Composition",
+      "Fee Structure — Current Session",
+      "Academic Calendar — Current Session",
+      "Teaching Staff List with Qualifications",
+      "Student Enrollment Data",
+      "CBSE Self-Certification Form"
+    ]
+  },
+
+  "office_hours": [
+    { "day": "Monday",    "hours": "8:00 AM – 3:00 PM", "open": true },
+    { "day": "Tuesday",   "hours": "8:00 AM – 3:00 PM", "open": true },
+    { "day": "Wednesday", "hours": "8:00 AM – 3:00 PM", "open": true },
+    { "day": "Thursday",  "hours": "8:00 AM – 3:00 PM", "open": true },
+    { "day": "Friday",    "hours": "8:00 AM – 3:00 PM", "open": true },
+    { "day": "Saturday",  "hours": "8:00 AM – 1:00 PM", "open": true },
+    { "day": "Sunday",    "hours": "Closed",             "open": false }
+  ],
+
+  "meta": {
+    "version": "2.0",
+    "last_updated": "March 2026",
+    "verified": true,
+    "placeholder_data": false,
+    "cbse_compliant": true
+  }
+}
